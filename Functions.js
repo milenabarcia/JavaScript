@@ -100,3 +100,122 @@ const numeros = [1, 2, 3];
 const dobrados = numeros.map(num => num * 2);
 console.log(dobrados); // [2, 4, 6]
 //Uso principal: Transformar arrays.
+filter()
+//Filtra os elementos que atendem a uma condição.
+
+const numeros = [10, 20, 30];
+const maioresQue15 = numeros.filter(num => num > 15);
+console.log(maioresQue15); // [20, 30]
+//Uso principal: Criar subarrays baseados em critérios.
+
+reduce()
+//Reduz o array a um único valor.
+
+const numeros = [1, 2, 3];
+const soma = numeros.reduce((acumulador, num) => acumulador + num, 0); console.log(soma); // 6
+//Uso principal: Acumular valores, como somas ou concatenações.        
+
+forEach()
+//Itera por cada elemento de um array.
+
+const frutas = ['maçã', 'banana', 'laranja']; frutas.forEach(fruta =>
+console.log(fruta));
+//Uso principal: Executar ações em cada item de uma lista.
+
+JSON.parse()  
+JSON.stringify()
+JSON.parse() : //Converte uma string JSON em um objeto.
+JSON.stringify() : //Converte um objeto em uma string JSON.
+
+const json = '{"nome":"Ana","idade":30}'; const obj =
+JSON.parse(json); console.log(obj.nome); // "Ana"
+const novoJson = JSON.stringify(obj); console.log(novoJson); //
+'{"nome":"Ana","idade":30}'
+//Uso principal: Manipular dados enviados/recebidos por APIs.
+
+fetch()
+//Realiza requisições HTTP.
+
+fetch('https://api.exemplo.com/dados')
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error('Erro:', error));
+//Uso principal: Obter ou enviar dados para servidores.
+
+if/else
+//Executa código com base em condições.
+Exemplo:
+const idade = 18; if (idade
+>= 18) {
+console.log('Maior de idade');
+} else {
+console.log('Menor de idade');
+}
+//Uso principal: Tomar decisões no código.
+
+
+switch
+
+//Seleciona uma entre várias opções com base em um valor.
+
+const cor = 'vermelho'; switch
+(cor) {
+case 'vermelho':
+console.log('Pare!'); break;
+case 'amarelo':
+console.log('Atenção!'); break;
+case 'verde': console.log('Siga!');
+break;
+default:
+console.log('Cor inválida');
+}
+//Uso principal: Substituir vários if/else aninhados.
+
+ Manipulação de Strings
+toUpperCase()
+//Converte uma string para letras maiúsculas.
+const texto = 'olá'; console.log(texto.toUpperCase()); // 'OLÁ'
+//Uso principal: Padronizar entrada de usuário.
+
+toLowerCase()
+//Converte uma string para letras minúsculas.
+
+const texto = 'OLÁ'; console.log(texto.toLowerCase()); // 'olá'
+//Uso principal: Padronizar comparacões de strings.
+
+includes()
+//Verifica se uma string contém outra.
+const frase = 'JavaScript é incrível';
+console.log(frase.includes('incrível')); // true
+//Uso principal: Procurar substrings dentro de uma string.
+
+//Estruturas de Dados Modernas
+Map
+//Uma coleção de pares chave-valor.
+const mapa = new Map();
+mapa.set('nome', 'João');
+console.log(mapa.get('nome')); // 'João'
+//Uso principal: Armazenar dados com chaves associadas.
+
+Set
+//Armazena valores únicos, sem repetições.
+const conjunto = new Set([1, 2, 2, 3]);
+console.log(conjunto); // Set { 1, 2, 3 }
+//Uso principal: Garantir que não haja valores duplicados.
+
+//Outras Funções Utilitárias
+
+Math.random()
+//Gera um número aleatório entre 0 e 1.
+
+const aleatorio = Math.random();
+console.log(aleatorio);
+//Uso principal: Geração de números aleatórios.
+
+Math.floor()
+//Arredonda um número para baixo.
+Exemplo:
+const numero = 4.7; console.log(Math.floor(numero)); // 4
+//Uso principal: Arredondar valores para inteiros.
+
+//RA em hexadecimal: 3AEBB   nome: MILENA MAZZEI BARCIA 
